@@ -1,0 +1,15 @@
+请将以下预训练模型文件放置在此目录下：
+Please place the following pre-trained model files in this directory:
+
+1. mask.pth - 外部环境识别模型 | External Environment Recognition Model
+2. PZ+DL.pth - 铺装和道路识别模型 | Paving and Road Recognition Model
+3. PZ.pth - 铺装识别模型 | Paving Recognition Model
+4. ST.pth - 水体识别模型 | Water Body Recognition Model
+5. GZW.pth - 构筑物识别模型 | Structure Recognition Model
+6. ZW.pth - 植物识别模型 | Plant Recognition Model
+
+模型下载链接 | Model Download Link:
+https://cloud.tsinghua.edu.cn/d/7b2c567ee9a24f08abe1/
+
+注意：模型文件较大，请耐心等待下载完成。
+Note: The model files are large, please wait patiently for the download to complete. 
