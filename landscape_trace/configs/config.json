@@ -1,0 +1,53 @@
+{
+    "version": "1.0.0",
+    "model": {
+        "paths": {
+            "mask": "weights/mask.pth",
+            "pz_dl": "weights/PZ+DL.pth",
+            "pz": "weights/PZ.pth",
+            "st": "weights/ST.pth",
+            "gzw": "weights/GZW.pth",
+            "zw": "weights/ZW.pth"
+        },
+        "params": {
+            "gpu_ids": [0],
+            "ngf": 64,
+            "init_gain": 0.02
+        },
+        "process_order": [
+            "ST",
+            "PZ+DL",
+            "PZ",
+            "GZW",
+            "ZW"
+        ]
+    },
+    "image": {
+        "params": {
+            "max_size": 1024,
+            "input_size": 512
+        }
+    },
+    "colors": {
+        "mask": [0, 245, 0],
+        "GZW": [245, 0, 245],
+        "PZ": [245, 245, 0],
+        "PZ+DL": [231, 135, 63],
+        "ST": [0, 245, 245],
+        "ZW": [0, 142, 57]
+    },
+    "process": {
+        "params": {
+            "mask": {
+                "min_dist": 100,
+                "k": 0.2,
+                "inserted": 1
+            },
+            "default": {
+                "min_dist": 1,
+                "k": 0.4,
+                "inserted": 100
+            }
+        }
+    }
+} 
