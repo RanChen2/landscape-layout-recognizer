@@ -1,5 +1,7 @@
 # 模型权重文件
 weights/
+landscape_trace/weights/*.pth
+!landscape_trace/weights/*.txt
 
 # Python
 __pycache__/
