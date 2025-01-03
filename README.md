@@ -1,8 +1,15 @@
 # 风景园林平面图描图机 v1.0
 # Landscape Architecture Plan Tracer v1.0
 
-- 这是一个从平面图生成设计布局数据的工具。
-- This is a tool for generating design layout data from landscape architecture plans.
+## 功能示例 | Function Example
+
+| 输入 Input | 输出 Output |
+|:---:|:---:|
+| <img src="000218.png" width="400"> | <img src="test.png" width="400"> |
+
+本工具可以将彩色的风景园林平面图自动转换为分层的布局数据。
+This tool can automatically convert colored landscape plans into layered layout data.
+
 
 - 输入一张风景园林平面图，输出一张设计布局图。
 - Input a landscape architecture plan and output a design layout.
@@ -23,19 +30,19 @@ You can view some processing results at the following link:
 
 ## 开发团队 | Development Team
 
-@地球研究所PPT @小敏姐姐 @陈博士 开发
+@地球研究所ppt @小敏姐姐 @陈博士 开发
 
 Developed via @Xiaomin @Dr. Chen
 
 联系我们：
 - 微信咨询：15690576620（小敏姐姐）/7053677787（陈博士）
-- 小红书/B站：地球研究所PPT
-- 微信公众号：地球研究社PPT
+- 小红书/B站：地球研究所ppt
+- 微信公众号：地球研究社ppt
 
 Contact Us:
 - WeChat: 15690576620 (Xiaomin) / 7053677787 (Dr. Chen)
-- Xiaohongshu/Bilibili: Earth Research Institute PPT
-- WeChat Official Account: Earth Research Society PPT
+- Xiaohongshu/Bilibili: 地球研究所ppt
+- WeChat Official Account: 地球研究社ppt
 
 ## 引用 | Citation
 
@@ -87,7 +94,7 @@ English Citation:
 支持多种园林元素的识别，包括：
 
 Supports recognition of various landscape elements, including:
-  - 外部环境 | External Environment
+  - 外部环境 | External Environment（mask）
   - 绿地 | Green Space (LD)
   - 水体 | Water Body (ST)
   - 铺装+道路 | Paving + Road (PZ+DL)
