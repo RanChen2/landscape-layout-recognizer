@@ -2,7 +2,6 @@ import torch
 import numpy as np
 from PIL import Image
 from torchvision import transforms
-from torchvision.transforms.functional import InterpolationMode
 
 def tensor2im(input_tensor, imtype=np.uint8):
     """将tensor转换为图像"""
@@ -17,7 +16,7 @@ def im2tensor(input_image):
     """将图像转换为tensor"""
     input_image = input_image.convert('RGB')
     transform_list = [
-        transforms.Resize([512,512], InterpolationMode.BICUBIC),
+        transforms.Resize([512,512], interpolation=Image.BICUBIC),
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
     ]
